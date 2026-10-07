@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Écrire à l'équipe d'organisation / Email the organizers
+    url: mailto:arnaudoltra@hotmail.fr
+    about: Pour une question privée ou un signalement lié au code de conduite. / For a private question or a code of conduct report.
+  - name: S'inscrire au prochain meetup / Register for the next meetup
+    url: https://luma.com/hbjqmcau
+    about: L'inscription aux rencontres se fait sur Luma. / Meetup registration happens on Luma.
