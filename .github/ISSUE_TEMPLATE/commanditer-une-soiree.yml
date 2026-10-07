@@ -1,0 +1,48 @@
+name: 🍕 Commanditer une soirée / Sponsor an evening
+description: Pizza, boissons, lots ou autre soutien. / Pizza, drinks, swag or other support.
+title: "[Commandite] "
+labels: ["commandite"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci ! Un petit budget suffit à faire vivre une rencontre.
+        Thank you! A small budget is enough to make a meetup happen.
+
+        Les détails financiers se règlent en privé : écris-nous à arnaudoltra@hotmail.fr ou sur LinkedIn.
+        Financial details are handled privately: email arnaudoltra@hotmail.fr or reach out on LinkedIn.
+  - type: input
+    id: entreprise
+    attributes:
+      label: Entreprise / Company
+    validations:
+      required: true
+  - type: checkboxes
+    id: type
+    attributes:
+      label: Type de commandite / Sponsorship type
+      options:
+        - label: Pizza
+        - label: Boissons / Drinks
+        - label: Lots ou goodies / Swag or prizes
+        - label: Autre (préciser plus bas) / Other (details below)
+  - type: dropdown
+    id: evenement
+    attributes:
+      label: Événement / Event
+      options:
+        - Meetup #1 — 28 octobre 2026 / October 28, 2026
+        - Une prochaine rencontre / A future meetup
+        - Peu importe / Any
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails / Details
+      description: Ce que tu proposes, et ce que tu attends en retour (logo, mention, prise de parole). / What you offer, and what you'd like in return (logo, mention, short pitch).
+  - type: input
+    id: contact
+    attributes:
+      label: Comment te joindre / How to reach you
+      description: Profil LinkedIn ou autre moyen public. / LinkedIn profile or another public channel.
+    validations:
+      required: true

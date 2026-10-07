@@ -1,0 +1,56 @@
+name: 🏢 Accueillir une rencontre / Host a meetup
+description: Ton entreprise a une salle pour 30 à 40 personnes ? / Does your company have a room for 30–40 people?
+title: "[Salle] "
+labels: ["salle"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci ! Accueillir un meetup, c'est une belle visibilité auprès de la communauté Symfony de la région.
+        Thank you! Hosting a meetup gives you great visibility with the local Symfony community.
+
+        Ne mets pas d'information privée ici (téléphone, codes d'accès) : on te contactera directement.
+        Don't post private information here (phone numbers, access codes): we'll reach out directly.
+  - type: input
+    id: entreprise
+    attributes:
+      label: Entreprise / Company
+    validations:
+      required: true
+  - type: input
+    id: ville
+    attributes:
+      label: Ville et quartier / City and neighborhood
+      placeholder: Montréal, Plateau
+    validations:
+      required: true
+  - type: input
+    id: capacite
+    attributes:
+      label: Capacité / Capacity
+      description: Nombre de personnes, en mode présentation. / Number of people, in presentation setup.
+    validations:
+      required: true
+  - type: checkboxes
+    id: equipement
+    attributes:
+      label: Équipement / Equipment
+      options:
+        - label: Projecteur ou écran / Projector or screen
+        - label: Micro / Microphone
+        - label: Wi-Fi pour les invités / Guest Wi-Fi
+        - label: Accessible en fauteuil roulant / Wheelchair accessible
+        - label: Proche du transport en commun / Close to public transit
+        - label: Nourriture et boissons permises / Food and drinks allowed
+  - type: input
+    id: dates
+    attributes:
+      label: Disponibilités / Availability
+      description: Soirs de semaine possibles, dates à éviter. / Possible weeknights, dates to avoid.
+  - type: input
+    id: contact
+    attributes:
+      label: Comment te joindre / How to reach you
+      description: Profil LinkedIn ou autre moyen public. / LinkedIn profile or another public channel.
+    validations:
+      required: true

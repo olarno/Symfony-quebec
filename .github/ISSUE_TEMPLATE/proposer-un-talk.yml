@@ -1,0 +1,77 @@
+name: 🎤 Proposer un talk / Submit a talk
+description: Première présentation ou expérience de la scène, format court ou long. / First-time or seasoned speaker, short or long format.
+title: "[Talk] "
+labels: ["talk"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de vouloir partager ! Quelques lignes suffisent, on t'aidera à préparer la suite.
+        Thanks for wanting to share! A few lines are enough, we'll help you with the rest.
+  - type: input
+    id: titre
+    attributes:
+      label: Titre du talk / Talk title
+    validations:
+      required: true
+  - type: textarea
+    id: resume
+    attributes:
+      label: Résumé / Abstract
+      description: De quoi parles-tu, et que retiendra le public ? / What is it about, and what will the audience take away?
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - Lightning talk (5 à 10 min / 5–10 min)
+        - Talk court / Short talk (20 à 30 min / 20–30 min)
+        - Talk long / Long talk (45 min)
+        - Atelier / Workshop
+    validations:
+      required: true
+  - type: dropdown
+    id: langue
+    attributes:
+      label: Langue / Language
+      options:
+        - Français
+        - English
+    validations:
+      required: true
+  - type: dropdown
+    id: niveau
+    attributes:
+      label: Niveau visé / Target level
+      options:
+        - Tous niveaux / All levels
+        - Débutant / Beginner
+        - Intermédiaire / Intermediate
+        - Avancé / Advanced
+  - type: checkboxes
+    id: premiere-fois
+    attributes:
+      label: Expérience / Experience
+      options:
+        - label: Ce serait ma première présentation (on t'accompagne !) / This would be my first talk (we'll support you!)
+  - type: textarea
+    id: speaker
+    attributes:
+      label: À propos de toi / About you
+      description: Quelques mots, et un lien (LinkedIn, GitHub, site). / A few words and a link (LinkedIn, GitHub, website).
+    validations:
+      required: true
+  - type: input
+    id: disponibilites
+    attributes:
+      label: Disponibilités / Availability
+      description: Une date ou une ville en particulier ? / A specific date or city?
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: Code de conduite / Code of conduct
+      options:
+        - label: J'ai lu et j'accepte le [code de conduite](https://github.com/olarno/Symfony-quebec/blob/main/CODE_OF_CONDUCT.md). / I have read and agree to the code of conduct.
+          required: true
